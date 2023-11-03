@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A web application to show photo of penguins">
+
+
+  <title>Puppy Fansclub</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+  <nav>
+  <span class="mobile">
+    <img src="https://user-images.githubusercontent.com/2970318/209647125-dc41103d-c545-4e2e-b89b-099fbfcde702.svg">
+  </span>
+
+  <span class="relative-container">
+    <img src="https://freepngimg.com/thumb/puppy/33728-6-puppy-transparent-image.png" class="logo">
+    <b>Stray Puppy Organization</b>
+  </span>
+
+    <ul class="desktop">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Puppies For Adoption</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Message Us</a></li>
+    </ul>
+    </nav>
+  <header class="FullScreen" id="Header">
+    <h1>Welcome to Stray Puppy Organization </h1>
+    <p>This is an App for puppy adoption</p>
+  </header>
+
+  <main>
+    <section id="doggies">
+      <h2>Puppies available for adoption</h2>
+      <div class="grid-container">
+
+        <div class="dog-photos" id="puppy-1">
+          <img src="https://main.spca.org.hk/Welfare/HOMING2/animalphotos/l/542970.jpg"
+            alt="Foster by SPCA Hong Kong" />
+        </div>
+
+        <div class="dog-photos" id="puppy-2">
+          <img src="https://main.spca.org.hk/Welfare/HOMING2/animalphotos/l/544392.jpg"
+            alt="Coffee by SPCA Hong Kong" />
+        </div>
+
+        <div class="dog-photos" id="puppy-3">
+          <img src="https://main.spca.org.hk/Welfare/HOMING2/animalphotos/l/540812.jpg"
+            alt="Min Min by SPCA Hong Kong" />
+        </div>
+
+        <div class="dog-photos" id="puppy-4">
+          <img src="https://images.squarespace-cdn.com/content/v1/53d10c55e4b0318b4e88f372/e49ac398-fa30-4a1c-a9df-a9a7473890c6/Faye.jpg"
+          alt="Jetty by SPCA Hong Kong" />
+        </div>
+
+        <div class="dog-photos" id="puppy-5">
+          <img src="https://cdn.royalcanin-weshare-online.io/pCJJPmYBaxEApS7LeAbn/v1/ed7h-how-to-buy-a-puppy-hero-dog"
+          alt="Milo by SPCA Hong Kong">
+        </div>
+
+        <div class="dog-photos" id="puppy-6">
+          <img src="https://www.purina.com/sites/default/files/2023-01/puppy-energy-levels-by-age.jpg"
+          alt="Bonnie and Clyde by SPCA Hong Kong">
+        </div>
+
+      </div>
+    </section>
+    <hr>
+    <section id="adoption-process">
+      <h2> Puppy Adoption Process </h2>
+      <div class="flex-container">
+        <ol>
+          <li>Visit our centres and interact with the animals.</li>
+          <li>Fill in our adoption registration form. </li>
+          <li>Applications are assessed on the basis of the animals best interests and welfare. </li>
+          <li>We will ask you to provide proof of address and relevant supporting documents. </li>
+          <li>We may ask applicants to provide adoption-related documents and proof of required equipment.</li>
+          <li>You will need to complete the adoption proceedure and pick up the animal by appointment within an agreed
+            period of time designated by SPCA, otherwise your application may be cancelled. The process lasts
+            approximately one to two hours, although is dependent on each animal’s situation. </li>
+        </ol>
+        <figure>
+          <picture>
+            <source media="(max-width: 480px)" srcset="img/dogsit.jpg">
+            <img src="img/dogsit.jpg" alt="Trained puppy">
+          </picture>
+          <figcaption>Puppy getting trained to <em>sit.</em></figcaption>
+        </figure>
+      </div>
+    </section>
+    <hr>
+
+    <section id="puppy-video">
+      <h2>Introduction to SPCA</h2>
+      <div class="flex-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5AAJYgVvmZY?si=Wkfp6vx5t9uV381r"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+
+        </iframe>
+      </div>
+    </section>
+
+    <section id="membership-form">
+
+      <h2>Join our membership now and get 20% off!</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Please kindly fill the form below:</legend>
+          <div>
+            <label for="Membership Type">Membership Type:</label>
+            <select id="Membership Type">
+              <option value="Priority">Priority</option>
+              <option value="Standard">Standard</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="SelectPlan">Select Plan:</label>
+            <select id="Select Plan">
+              <option value="1Year">Annual Membership</option>
+              <option value="2Years">2 Years Membership</option>
+              <option value="3Years">3 Years Membership</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="Title">Title:</label>
+            <label>
+              <input type="radio" name="Title" value="Mr" >Mr
+            </label>
+            <label>
+              <input type="radio" name="Title" value="Ms" >Ms
+            </label>
+            <label>
+              <input type="radio" name="Title" value="Mrs" >Mrs
+            </label>
+          </div>
+
+          <div>
+            <label for="fullName">Full Name:</label>
+            <input id="fullName" type="text" required>
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" required>
+          </div>
+
+          <div>
+            <label for="DOB">Date of Birth</label><br>
+            <input 
+            id="DOB" 
+            type="date" 
+            name="trip-start" 
+            value="2001-01-01">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Adoption Information:</legend>
+          <p>Please upload the picture of the puppy you are planning to adopt.</p>
+
+          <div>
+            <form action="/action_page.php">
+              <input type="file" id="myFile" name="filename">
+            </form>
+          </div>
+
+          <div>
+            <input type="checkbox" id="T&C" name="T&C" value="Agree" required>
+            <label for="T&C"> I agree to the Terms and Conditions.</label>
+          </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'Edu-TAS-Beginner';
+  src: url(fonts/EduTASBeginner-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Edu-TAS-Beginner';
+  src: url(fonts/EduTASBeginner-Bold.ttf);
+  font-weight: bold;
+}
+
+body {
+  font-family: Edu-TAS-Beginner, "Calibri", Calibri;
+  margin: 0;
+}
+
+
+section {
+  margin: 0 16px;
+  display: block;
+}
+
+section.FullScreen {
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 52px;
+  border-bottom: 2px solid #222222;
+}
+
+ol {
+  list-style:decimal;
+}
+
+nav>ul {
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>span>img {
+  height: 32px;
+  width: auto;
+  padding: 8px;
+}
+
+nav>span {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background-color: #222222;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 48px;
+  background-image: url(img/doggie_wide.jpg);
+  background-position: top center;
+  background-position-y: -125px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@keyframes popup {
+  from {
+    font-size: 0px;
+  }
+
+  to {
+    font-size: auto;
+  }
+}
+
+.relative-container {
+  position: relative;
+}
+
+header h1 {
+  margin: 16px;
+  animation-duration: 2s;
+  animation-name: popup;
+  text-shadow: 2px 2px #222222
+}
+
+header h3 {
+  margin: 16px;
+}
+
+header p {
+  margin: 0;
+  animation-duration: 2s;
+  animation-name: popup;
+  text-shadow: 2px 2px #222222 
+}
+
+img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+figcaption {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#puppy-video .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  width: 560px;
+  height: 360px;
+  margin: 0 auto;
+  background-color: #777;
+
+  display: block;
+  border-style: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 80%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: block;
+}
+
+#membership-form {
+  background-color: #333333;
+  color: white;
+  padding: 8px;
+  margin-top: 16px;
+  line-height: 35px;
+}
+
+#doggies .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  grid-auto-rows: 240px 240px 240px;
+}
+
+#doggies .grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-container #puppy-1 {
+  grid-column: 1 / 2 span;
+  grid-row: 1;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+#membership-form form {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button[type="submit"] {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  display: block;
+  margin: auto;
+  border-radius: 4px;
+  width: 476px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dog-photos {
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.dog-photos:hover {
+  filter: none;
+  transition-property: filter;
+  transition-duration: 1s;
+}
+
+/* for tablet and desktop */
+@media only screen and (min-width: 768px) {
+  #adoption-process > .flex-container {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  #adoption-process > .flex-container figure {
+    margin-left: auto;
+  }
+
+  #adoption-process > .flex-container figure img {
+    height: 300px;
+    width: 400px;
+  }
+
+  #adoption-process > .flex-container figcaption {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  #adoption-process > .flex-container.row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  #adoption-process > .flex-container.row-reverse p {
+    margin-left: 32px;
+  }
+
+  #adoption-process > .flex-container.row-reverse figure {
+    margin-left: 40px;
+    min-width: 320px;
+  }
+
+  iframe {
+    max-width: 480px;
+  }
+
+  #doggies .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    grid-auto-rows: 320px 320px;
+  }
+
+  #doggies .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .grid-container #puppy-1 {
+    grid-column: 1;
+    grid-row: 1 / 2 span;
+  }
+
+  .grid-container #puppy-2 {
+    grid-row: 1;
+    grid-column: 3 / 4 span;
+  }
+}
